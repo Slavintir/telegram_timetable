@@ -1,0 +1,61 @@
+{
+  "name": "timetable_bot",
+  "version": "0.0.0",
+  "description": "Telegram bot to view the schedule",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "./node_modules/.bin/rimraf dist/ && ./node_modules/.bin/tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slavintir/timetable_bot.git"
+  },
+  "keywords": [
+    "#rozklad",
+    "#kpi"
+  ],
+  "author": "Vyacheslav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Slavintir/timetable_bot/issues"
+  },
+  "homepage": "https://github.com/Slavintir/timetable_bot#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/mongoose": "^5.7.24",
+    "@types/node": "^12.12.17",
+    "@types/node-fetch": "^2.5.4",
+    "@types/node-telegram-bot-api": "^0.40.3",
+    "@types/recursive-readdir": "^2.2.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "rimraf": "^3.0.0",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.9.18",
+    "node-fetch": "^2.6.0",
+    "node-telegram-bot-api": "^0.50.0",
+    "recursive-readdir": "^2.2.2",
+    "telegraf": "^3.34.1"
+  },
+  "_moduleAliases": {
+    "@classes": "dist/classes",
+    "@interfaces": "dist/interfaces",
+    "@helpers": "dist/helpers",
+    "@factories": "dist/factories",
+    "@services": "dist/services",
+    "@telegram": "dist/telegram",
+    "@scenarios": "dist/telegram/scenarios/",
+    "@commands": "dist/telegram/commands/",
+    "@components": "dist/telegram/components/",
+    "@models": "dist/models/",
+    "@states": "dist/telegram/states"
+  }
+}

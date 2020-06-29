@@ -1,0 +1,47 @@
+{
+	"compilerOptions": {
+	  "outDir": "dist",
+	  "module": "commonjs",
+	  "target": "es2017",
+	  "sourceMap": true,
+	  "moduleResolution": "node",
+	  "baseUrl": "./",
+	  "esModuleInterop": true,
+	  "noImplicitReturns": true,
+	  "paths": {
+		"@actions/*": [
+		  "src/actions/*"
+		],
+		"@constants": [
+		  "src/constants.ts"
+		],
+		"@interfaces/*": [
+		  "src/interfaces/*"
+		],
+		"@helpers/*": [
+		  "src/helpers/*"
+		],
+		"@models/*": [
+		  "src/models/*"
+		],
+		"@services/*": [
+		  "src/services/*"
+		],
+		"@schemas/*": [
+		  "src/schemas/*"
+		],
+		"@classes/*": [
+		  "src/classes/*"
+		],
+		"@mocks/*": [
+		  "test/__mocks__/*"
+		]
+	  }
+	},
+	"include": [
+	  "src/**/*",
+	],
+	"exclude": [
+	  "node_modules"
+	]
+  }

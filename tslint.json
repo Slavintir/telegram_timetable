@@ -1,0 +1,27 @@
+{
+    "extends": "tslint-config-airbnb",
+    "rules": {    
+        "max-line-length": [true, 140],
+        "newline-before-return": true,
+        "ter-indent": [false],
+        "variable-name": false,
+        "import-name": false,
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-preblock",
+            "check-postbrac",
+            "check-separator",
+            "check-type",
+            "check-type-operator",
+            "check-module"
+          ],
+          
+        "no-console": {
+            "severity": "warning",
+            "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+        }
+    }
+}
